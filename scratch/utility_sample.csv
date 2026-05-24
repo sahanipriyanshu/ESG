@@ -1,0 +1,4 @@
+Meter ID,Billing Start,Billing End,kWh,Tariff
+METER_001,2023-01-01,2023-01-31,1500,Standard
+METER_002,2023-02-01,2023-01-15,500,Standard
+METER_003,2023-03-01,2023-03-31,-100,Standard
