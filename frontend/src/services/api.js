@@ -1,6 +1,6 @@
 // Hardcoded for prototype
 export const ORG_ID = '4cd7399b-c1af-4052-aa60-eb624520e0c6'; // Acme Corp Test ID from python test script
-const BASE_URL = 'http://localhost:8000/api';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
 
 export const api = {
   // Ingestion
