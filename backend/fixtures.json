@@ -1,0 +1,562 @@
+[
+{
+  "model": "organizations.organization",
+  "pk": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+  "fields": {
+    "name": "Acme Corp Test",
+    "created_at": "2026-05-24T15:28:40.833Z"
+  }
+},
+{
+  "model": "records.datasource",
+  "pk": "4e327d2c-8e7c-4c2f-a8de-d3792d7de3e0",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "source_type": "utility",
+    "ingestion_mode": "api",
+    "original_file": "uploads/2026/05/24/utility_sample.csv",
+    "uploaded_at": "2026-05-24T15:29:24.462Z"
+  }
+},
+{
+  "model": "records.datasource",
+  "pk": "70572b99-d1eb-4fb7-b700-b91aae186fef",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "source_type": "sap",
+    "ingestion_mode": "api",
+    "original_file": "uploads/2026/05/24/sap_sample.csv",
+    "uploaded_at": "2026-05-24T15:29:24.436Z"
+  }
+},
+{
+  "model": "records.datasource",
+  "pk": "c07e9616-df3a-4b3d-81e6-ec8b0fe5c39a",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "source_type": "travel",
+    "ingestion_mode": "api",
+    "original_file": "",
+    "uploaded_at": "2026-05-24T15:29:24.477Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "1b02f79c-7039-4ca2-a5f5-7331cf0702ad",
+  "fields": {
+    "data_source": "4e327d2c-8e7c-4c2f-a8de-d3792d7de3e0",
+    "raw_payload": {
+      "Meter ID": "METER_003",
+      "Billing Start": "2023-03-01",
+      "Billing End": "2023-03-31",
+      "kWh": -100,
+      "Tariff": "Standard"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.474Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "3d71f0d7-21b8-4e1f-94f7-b42c3bfaaf12",
+  "fields": {
+    "data_source": "4e327d2c-8e7c-4c2f-a8de-d3792d7de3e0",
+    "raw_payload": {
+      "Meter ID": "METER_002",
+      "Billing Start": "2023-02-01",
+      "Billing End": "2023-01-15",
+      "kWh": 500,
+      "Tariff": "Standard"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.473Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "4acfe4a2-9422-4dc5-ac89-93f452f62516",
+  "fields": {
+    "data_source": "70572b99-d1eb-4fb7-b700-b91aae186fef",
+    "raw_payload": {
+      "Buchungsdatum": "2025-12-01",
+      "Werk": "SAP_FRANKFURT",
+      "Treibstoffart": "Diesel",
+      "Menge": 100,
+      "Einheit": "L"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.454Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "62856da7-e322-4662-9f93-d7a16a38093f",
+  "fields": {
+    "data_source": "70572b99-d1eb-4fb7-b700-b91aae186fef",
+    "raw_payload": {
+      "Buchungsdatum": "2023-01-16",
+      "Werk": "SAP_MUNICH",
+      "Treibstoffart": "Benzin",
+      "Menge": 12000,
+      "Einheit": "Gallon"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.453Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "6cfe4482-9a42-480f-8ceb-2579dc345121",
+  "fields": {
+    "data_source": "c07e9616-df3a-4b3d-81e6-ec8b0fe5c39a",
+    "raw_payload": {
+      "type": "flight",
+      "date": "2023-04-12",
+      "distance": 800
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.486Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "747a3801-ff15-481a-9e08-44e9c6093b5b",
+  "fields": {
+    "data_source": "4e327d2c-8e7c-4c2f-a8de-d3792d7de3e0",
+    "raw_payload": {
+      "Meter ID": "METER_001",
+      "Billing Start": "2023-01-01",
+      "Billing End": "2023-01-31",
+      "kWh": 1500,
+      "Tariff": "Standard"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.470Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "81f6065c-020a-423c-a5a1-03af99c2dbf6",
+  "fields": {
+    "data_source": "c07e9616-df3a-4b3d-81e6-ec8b0fe5c39a",
+    "raw_payload": {
+      "type": "hotel",
+      "date": "2023-04-10",
+      "nights": 5
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.487Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "85f4263f-e2e7-435d-8b01-469f0d1d97ca",
+  "fields": {
+    "data_source": "70572b99-d1eb-4fb7-b700-b91aae186fef",
+    "raw_payload": {
+      "Buchungsdatum": "2023-02-01",
+      "Werk": "SAP_BERLIN",
+      "Treibstoffart": "Unknown_Fuel",
+      "Menge": -50,
+      "Einheit": "KG"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.456Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "8dc243f7-c0ff-4b2d-8b68-d5cf3d8d89ec",
+  "fields": {
+    "data_source": "c07e9616-df3a-4b3d-81e6-ec8b0fe5c39a",
+    "raw_payload": {
+      "type": "hotel",
+      "date": "2023-04-15",
+      "nights": 40
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.487Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "b03d688a-1630-4c56-8574-1bb9821d1706",
+  "fields": {
+    "data_source": "c07e9616-df3a-4b3d-81e6-ec8b0fe5c39a",
+    "raw_payload": {
+      "type": "flight",
+      "date": "2023-04-10",
+      "origin": "JFK",
+      "destination": "LHR"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.482Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "ba37f90c-abb5-4d93-a6d3-18205939502b",
+  "fields": {
+    "data_source": "c07e9616-df3a-4b3d-81e6-ec8b0fe5c39a",
+    "raw_payload": {
+      "type": "ground",
+      "date": "2023-04-15",
+      "distance": -10
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.488Z"
+  }
+},
+{
+  "model": "records.rawrecord",
+  "pk": "c511b2c1-550a-474a-bcf0-c540ca852a35",
+  "fields": {
+    "data_source": "70572b99-d1eb-4fb7-b700-b91aae186fef",
+    "raw_payload": {
+      "Buchungsdatum": "2023-01-15",
+      "Werk": "SAP_BERLIN",
+      "Treibstoffart": "Diesel",
+      "Menge": 500,
+      "Einheit": "L"
+    },
+    "ingestion_status": "processed",
+    "error_message": null,
+    "created_at": "2026-05-24T15:29:24.447Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "1a4e7346-2744-47d7-9272-73e97ac0ed52",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "81f6065c-020a-423c-a5a1-03af99c2dbf6",
+    "category": "business_travel",
+    "scope": 3,
+    "activity_date": "2023-04-10",
+    "quantity": "5.0000",
+    "normalized_unit": "nights",
+    "estimated_emissions": "75.0000",
+    "status": "pending_review",
+    "suspicious_reason": null,
+    "locked_for_audit": false,
+    "source_of_truth": "TRAVEL_API",
+    "created_at": "2026-05-24T15:29:24.487Z",
+    "updated_at": "2026-05-24T15:29:24.487Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "1f05751c-79f2-4928-9dbc-5c8e1c3eacf1",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "4acfe4a2-9422-4dc5-ac89-93f452f62516",
+    "category": "stationary_combustion_diesel",
+    "scope": 1,
+    "activity_date": "2025-12-01",
+    "quantity": "100.0000",
+    "normalized_unit": "L",
+    "estimated_emissions": "268.0000",
+    "status": "approved",
+    "suspicious_reason": null,
+    "locked_for_audit": true,
+    "source_of_truth": "SAP_SAP_FRANKFURT",
+    "created_at": "2026-05-24T15:29:24.455Z",
+    "updated_at": "2026-05-24T15:35:24.100Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "44f290a9-17e1-4177-9b50-549190c27481",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "6cfe4482-9a42-480f-8ceb-2579dc345121",
+    "category": "business_travel",
+    "scope": 3,
+    "activity_date": "2023-04-12",
+    "quantity": "800.0000",
+    "normalized_unit": "km",
+    "estimated_emissions": "120.0000",
+    "status": "pending_review",
+    "suspicious_reason": null,
+    "locked_for_audit": false,
+    "source_of_truth": "TRAVEL_API",
+    "created_at": "2026-05-24T15:29:24.486Z",
+    "updated_at": "2026-05-24T15:29:24.486Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "5270a6a6-87ad-4b96-9482-17ca7d26865a",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "62856da7-e322-4662-9f93-d7a16a38093f",
+    "category": "stationary_combustion_benzin",
+    "scope": 1,
+    "activity_date": "2023-01-16",
+    "quantity": "45424.9200",
+    "normalized_unit": "L",
+    "estimated_emissions": "104931.5652",
+    "status": "pending_review",
+    "suspicious_reason": "Unusually large quantity (>10,000).",
+    "locked_for_audit": false,
+    "source_of_truth": "SAP_SAP_MUNICH",
+    "created_at": "2026-05-24T15:29:24.453Z",
+    "updated_at": "2026-05-24T15:29:24.453Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "527d66c9-dcd1-4143-ae64-9fd796e0e8fd",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "747a3801-ff15-481a-9e08-44e9c6093b5b",
+    "category": "purchased_electricity",
+    "scope": 2,
+    "activity_date": "2023-01-01",
+    "quantity": "1500.0000",
+    "normalized_unit": "kWh",
+    "estimated_emissions": "600.0000",
+    "status": "pending_review",
+    "suspicious_reason": null,
+    "locked_for_audit": false,
+    "source_of_truth": "UTILITY_METER_METER_001",
+    "created_at": "2026-05-24T15:29:24.472Z",
+    "updated_at": "2026-05-24T15:29:24.472Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "5cefade5-0268-46d8-aa34-f23b14609de6",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "3d71f0d7-21b8-4e1f-94f7-b42c3bfaaf12",
+    "category": "purchased_electricity",
+    "scope": 2,
+    "activity_date": "2023-02-01",
+    "quantity": "500.0000",
+    "normalized_unit": "kWh",
+    "estimated_emissions": "200.0000",
+    "status": "pending_review",
+    "suspicious_reason": "Billing start is after billing end.",
+    "locked_for_audit": false,
+    "source_of_truth": "UTILITY_METER_METER_002",
+    "created_at": "2026-05-24T15:29:24.473Z",
+    "updated_at": "2026-05-24T15:29:24.473Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "7d7f1d5f-8d6f-4b6c-8e02-5f3b55fe8fbb",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "85f4263f-e2e7-435d-8b01-469f0d1d97ca",
+    "category": "stationary_combustion_unknown_fuel",
+    "scope": 1,
+    "activity_date": "2023-02-01",
+    "quantity": "-50.0000",
+    "normalized_unit": "KG",
+    "estimated_emissions": "-125.0000",
+    "status": "pending_review",
+    "suspicious_reason": "Negative quantity detected.",
+    "locked_for_audit": false,
+    "source_of_truth": "SAP_SAP_BERLIN",
+    "created_at": "2026-05-24T15:29:24.456Z",
+    "updated_at": "2026-05-24T15:29:24.456Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "ae140d83-a917-4c78-a49f-b5c895fb3e96",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "ba37f90c-abb5-4d93-a6d3-18205939502b",
+    "category": "business_travel",
+    "scope": 3,
+    "activity_date": "2023-04-15",
+    "quantity": "-10.0000",
+    "normalized_unit": "km",
+    "estimated_emissions": "-2.0000",
+    "status": "pending_review",
+    "suspicious_reason": "Zero or negative quantity for ground.",
+    "locked_for_audit": false,
+    "source_of_truth": "TRAVEL_API",
+    "created_at": "2026-05-24T15:29:24.488Z",
+    "updated_at": "2026-05-24T15:29:24.488Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "c15fc4fb-8327-474c-b5b7-ce0bce2f2513",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "b03d688a-1630-4c56-8574-1bb9821d1706",
+    "category": "business_travel",
+    "scope": 3,
+    "activity_date": "2023-04-10",
+    "quantity": "5540.0000",
+    "normalized_unit": "km",
+    "estimated_emissions": "831.0000",
+    "status": "pending_review",
+    "suspicious_reason": null,
+    "locked_for_audit": false,
+    "source_of_truth": "TRAVEL_API",
+    "created_at": "2026-05-24T15:29:24.484Z",
+    "updated_at": "2026-05-24T15:29:24.484Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "d1b4e93d-0c3f-4bcc-9120-6c4383afe910",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "c511b2c1-550a-474a-bcf0-c540ca852a35",
+    "category": "stationary_combustion_diesel",
+    "scope": 1,
+    "activity_date": "2023-01-15",
+    "quantity": "500.0000",
+    "normalized_unit": "L",
+    "estimated_emissions": "1340.0000",
+    "status": "pending_review",
+    "suspicious_reason": null,
+    "locked_for_audit": false,
+    "source_of_truth": "SAP_SAP_BERLIN",
+    "created_at": "2026-05-24T15:29:24.451Z",
+    "updated_at": "2026-05-24T15:29:24.451Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "d5c4496a-90db-406a-95c2-48bb1c144e35",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "8dc243f7-c0ff-4b2d-8b68-d5cf3d8d89ec",
+    "category": "business_travel",
+    "scope": 3,
+    "activity_date": "2023-04-15",
+    "quantity": "40.0000",
+    "normalized_unit": "nights",
+    "estimated_emissions": "600.0000",
+    "status": "pending_review",
+    "suspicious_reason": "Hotel stay > 30 nights.",
+    "locked_for_audit": false,
+    "source_of_truth": "TRAVEL_API",
+    "created_at": "2026-05-24T15:29:24.487Z",
+    "updated_at": "2026-05-24T15:29:24.487Z"
+  }
+},
+{
+  "model": "records.normalizedrecord",
+  "pk": "f63bf0f8-4a44-415f-afde-83d2213b26a7",
+  "fields": {
+    "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+    "raw_record": "1b02f79c-7039-4ca2-a5f5-7331cf0702ad",
+    "category": "purchased_electricity",
+    "scope": 2,
+    "activity_date": "2023-03-01",
+    "quantity": "-100.0000",
+    "normalized_unit": "kWh",
+    "estimated_emissions": "-40.0000",
+    "status": "pending_review",
+    "suspicious_reason": "Negative electricity consumption.",
+    "locked_for_audit": false,
+    "source_of_truth": "UTILITY_METER_METER_003",
+    "created_at": "2026-05-24T15:29:24.474Z",
+    "updated_at": "2026-05-24T15:29:24.474Z"
+  }
+},
+{
+  "model": "audit.auditlog",
+  "pk": "3c4ec0d5-1c16-4dda-9f76-4f586857464f",
+  "fields": {
+    "content_type": [
+      "records",
+      "normalizedrecord"
+    ],
+    "object_id": "1f05751c-79f2-4928-9dbc-5c8e1c3eacf1",
+    "action": "lock",
+    "previous_values": {
+      "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+      "raw_record": "4acfe4a2-9422-4dc5-ac89-93f452f62516",
+      "category": "stationary_combustion_diesel",
+      "scope": 1,
+      "activity_date": "2025-12-01",
+      "quantity": "100.0000",
+      "normalized_unit": "L",
+      "estimated_emissions": "268.0000",
+      "status": "approved",
+      "suspicious_reason": null,
+      "locked_for_audit": false,
+      "source_of_truth": "SAP_SAP_FRANKFURT"
+    },
+    "new_values": {
+      "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+      "raw_record": "4acfe4a2-9422-4dc5-ac89-93f452f62516",
+      "category": "stationary_combustion_diesel",
+      "scope": 1,
+      "activity_date": "2025-12-01",
+      "quantity": "100.0000",
+      "normalized_unit": "L",
+      "estimated_emissions": "268.0000",
+      "status": "approved",
+      "suspicious_reason": null,
+      "locked_for_audit": true,
+      "source_of_truth": "SAP_SAP_FRANKFURT"
+    },
+    "actor": "Manager Bob",
+    "timestamp": "2026-05-24T15:35:24.102Z"
+  }
+},
+{
+  "model": "audit.auditlog",
+  "pk": "49d1e500-8117-4ea3-b812-efecf02f913b",
+  "fields": {
+    "content_type": [
+      "records",
+      "normalizedrecord"
+    ],
+    "object_id": "1f05751c-79f2-4928-9dbc-5c8e1c3eacf1",
+    "action": "approve",
+    "previous_values": {
+      "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+      "raw_record": "4acfe4a2-9422-4dc5-ac89-93f452f62516",
+      "category": "stationary_combustion_diesel",
+      "scope": 1,
+      "activity_date": "2025-12-01",
+      "quantity": "100.0000",
+      "normalized_unit": "L",
+      "estimated_emissions": "268.0000",
+      "status": "pending_review",
+      "suspicious_reason": null,
+      "locked_for_audit": false,
+      "source_of_truth": "SAP_SAP_FRANKFURT"
+    },
+    "new_values": {
+      "organization": "4cd7399b-c1af-4052-aa60-eb624520e0c6",
+      "raw_record": "4acfe4a2-9422-4dc5-ac89-93f452f62516",
+      "category": "stationary_combustion_diesel",
+      "scope": 1,
+      "activity_date": "2025-12-01",
+      "quantity": "100.0000",
+      "normalized_unit": "L",
+      "estimated_emissions": "268.0000",
+      "status": "approved",
+      "suspicious_reason": null,
+      "locked_for_audit": false,
+      "source_of_truth": "SAP_SAP_FRANKFURT"
+    },
+    "actor": "Analyst Alice",
+    "timestamp": "2026-05-24T15:35:24.089Z"
+  }
+}
+]
